@@ -1,0 +1,25 @@
+{
+  "name": "babel-async-await-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel-install:es2015": "cd ./babel-es2015-async-await-functions && npm prune && npm install",
+    "babel-start:es2015": "cd ./babel-es2015-async-await-functions && npm run transpile:exec",
+    "babel-install:latest": "cd ./babel-latest-async-await-functions && npm prune && npm install",
+    "babel-start:latest": "cd ./babel-latest-async-await-functions && npm run transpile:exec",
+    "init": "npm run babel-install:es2015 && npm run babel-install:latest",
+    "start": "npm run babel-start:es2015 && npm run babel-start:latest",
+    "init:start": "npm run init && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoDomingueti/babel-async-await-functions.git"
+  },
+  "author": "Gustavo Domingueti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoDomingueti/babel-async-await-functions/issues"
+  },
+  "homepage": "https://github.com/GustavoDomingueti/babel-async-await-functions#readme"
+}
