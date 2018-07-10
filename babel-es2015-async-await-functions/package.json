@@ -1,0 +1,22 @@
+{
+  "name": "codes",
+  "version": "1.0.0",
+  "description": "Transpile js - async await functions - es2015",
+  "main": "async-await-functions.js",
+  "scripts": {
+    "clean": "del-cli ./dist/async-await-functions.babel.js",
+    "build": "babel ./src/async-await-functions.js -o ./dist/async-await-functions.babel.js",
+    "start": "node ./dist/async-await-functions.babel.js",
+    "transpile": "npm run clean && npm run build",
+    "transpile:exec": "npm run transpile && npm run start"
+  },
+  "author": "Gustavo Domingueti",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "del-cli": "^1.1.0"
+  }
+}
