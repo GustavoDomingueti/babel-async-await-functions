@@ -60,4 +60,6 @@ async function finalize() {
     }
 }
 
+console.log('Inicializing - Async Await Functions - es2015');
 finalize();
+console.log('Finished - Async Await Functions - es2015');
