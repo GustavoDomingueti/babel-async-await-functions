@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "babel-install:es2015": "cd ./babel-es2015-async-await-functions && npm prune && npm install",
+    "babel-build:es2015": "cd ./babel-es2015-async-await-functions && npm run build",
     "babel-start:es2015": "cd ./babel-es2015-async-await-functions && npm run transpile:exec",
     "babel-install:latest": "cd ./babel-latest-async-await-functions && npm prune && npm install",
+    "babel-build:latest": "cd ./babel-latest-async-await-functions && npm run build",
     "babel-start:latest": "cd ./babel-latest-async-await-functions && npm run transpile:exec",
     "init": "npm run babel-install:es2015 && npm run babel-install:latest",
+    "build": "npm run babel-build:es2015 && npm run babel-build:latest",
     "start": "npm run babel-start:es2015 && npm run babel-start:latest",
     "init:start": "npm run init && npm run start"
   },
